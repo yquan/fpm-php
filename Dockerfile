@@ -15,3 +15,5 @@ RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
     tokenizer \
     mcrypt \
     xdebug
+
+COPY php.ini /usr/local/etc/php/php.ini
