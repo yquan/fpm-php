@@ -1,4 +1,6 @@
-FROM php:7.1-fpm-alpine
+ARG ARG_PHP_VERSION=7.1
+
+FROM php:${ARG_PHP_VERSION}-fpm-buster
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
