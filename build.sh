@@ -12,7 +12,7 @@ versions=( 7.1 7.2 7.3 7.4 8.0 )
 for version in "${versions[@]}"
 do
   case ${version} in
-  7.1 | 7.2 | 7.3 )
+  7.1 | 7.2 | 7.3 | 7.4 )
     distro="buster"
     ;;
 
@@ -31,4 +31,4 @@ esac
     --build-arg ARG_IMAGE_DISTRO=${distro} \
     -t yquan/fpm-php:${version} .
 done
-#docker image push --all-tags yquan/fpm-php
+docker image push --all-tags yquan/fpm-php
