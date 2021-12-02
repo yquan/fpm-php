@@ -17,6 +17,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
     pdo_mysql \
     tokenizer \
     mcrypt \
-    xdebug
+    xdebug \
+    imagick
 
 COPY php.ini /usr/local/etc/php/php.ini
